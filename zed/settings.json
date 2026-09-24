@@ -1,60 +1,110 @@
+// ============================================================================
 // Zed settings
 //
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
+// Docs: https://zed.dev/docs/configuring-zed
+// Full settings reference: https://zed.dev/docs/reference/all-settings
 //
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
+// To see all of Zed's defaults without changing this file, run
+// `zed: open default settings` from the command palette (cmd/ctrl-shift-p)
+// ============================================================================
 {
-  "toolbar": {
-    "agent_review": true
+  // --------------------------------------------------------------------------
+  // Telemetry
+  // --------------------------------------------------------------------------
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
   },
-  "git_panel": {
-    "tree_view": true
-  },
-  "collaboration_panel": {
-    "button": false
-  },
-  "cursor_shape": "block",
-  "cursor_animation": {
-    "enabled": true
-  },
-  "prettier": {
-    "allowed": true
-  },
-  "icon_theme": "Material Icon Theme",
-  "agent": {
-    "button": true,
-    "sidebar_side": "left",
-    "favorite_models": [],
-    "model_parameters": []
-  },
-  "agent_servers": {
-    "claude-acp": {
-      "default_config_options": {
-        "model": "sonnet",
-        "effort": "medium"
-      },
-      "type": "registry"
-    }
-  },
+  // --------------------------------------------------------------------------
+  // File behavior / saving
+  // --------------------------------------------------------------------------
+  "remove_trailing_whitespace_on_save": false,
+  "ensure_final_newline_on_save": true,
   "autosave": {
     "after_delay": {
       "milliseconds": 1000
     }
   },
-  "diff_view_style": "split",
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false
-  },
-  "cli_default_open_behavior": "existing_window",
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "format_on_save": "on",
+  "formatter": "language_server",
+  // --------------------------------------------------------------------------
+  // Appearance: theme, icons and fonts
+  // --------------------------------------------------------------------------
   "theme": {
     "mode": "dark",
     "light": "Ayu Light",
-    "dark": "Gruvbox Dark Hard",
+    "dark": "Gruvbox Dark Hard"
   },
+  "icon_theme": "Material Icon Theme",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  // --------------------------------------------------------------------------
+  // Cursor
+  // --------------------------------------------------------------------------
+  "cursor_shape": "block",
+  "cursor_animation": {
+    "enabled": true
+  },
+  // --------------------------------------------------------------------------
+  // Editor: diff view
+  // --------------------------------------------------------------------------
+  "diff_view_style": "split",
+  // --------------------------------------------------------------------------
+  // Open behavior / CLI
+  // --------------------------------------------------------------------------
+  "cli_default_open_behavior": "existing_window",
+  // --------------------------------------------------------------------------
+  // Git
+  // --------------------------------------------------------------------------
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true,
+      // The correct field is "location" (not "position"), values: "inline" | "status_bar".
+      // Keep it as "inline" (default) or switch to "status_bar" if you'd rather
+      // see blame in the status bar instead of next to the line.
+      "location": "inline"
+    }
+  },
+  // --------------------------------------------------------------------------
+  // External formatters (e.g. Prettier)
+  // --------------------------------------------------------------------------
+  "prettier": {
+    "allowed": true
+  },
+  // --------------------------------------------------------------------------
+  // Panels (Project, Notification, Git, Collaboration)
+  // --------------------------------------------------------------------------
+  "project_panel": {
+    "default_width": 225,
+    "button": true,
+    "dock": "right",
+    "git_status": true
+  },
+  "notification_panel": {
+    "default_width": 200,
+    "dock": "right"
+  },
+  "git_panel": {
+    "dock": "right",
+    "tree_view": true
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  // --------------------------------------------------------------------------
+  // Editor toolbar
+  // --------------------------------------------------------------------------
+  "toolbar": {
+    "agent_review": true
+  },
+  // --------------------------------------------------------------------------
+  // Agent Panel (AI)
+  // --------------------------------------------------------------------------
+  "agent": {
+    "sidebar_side": "left",
+    "button": true,
+    "favorite_models": [],
+    "model_parameters": []
+  }
 }
