@@ -1,0 +1,60 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "toolbar": {
+    "agent_review": true
+  },
+  "git_panel": {
+    "tree_view": true
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "cursor_shape": "block",
+  "cursor_animation": {
+    "enabled": true
+  },
+  "prettier": {
+    "allowed": true
+  },
+  "icon_theme": "Material Icon Theme",
+  "agent": {
+    "button": true,
+    "sidebar_side": "left",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "model": "sonnet",
+        "effort": "medium"
+      },
+      "type": "registry"
+    }
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "diff_view_style": "split",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "cli_default_open_behavior": "existing_window",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "Ayu Light",
+    "dark": "Gruvbox Dark Hard",
+  },
+}
