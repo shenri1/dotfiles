@@ -1,0 +1,8 @@
+// =============== Display Configuration ===============
+// This actually does not really working (functions with
+// /- are off in niri. If you want use, edit and remove
+// the "/-"
+/- output "DP-1" {
+    mode "2560x1440@359.979" // Set resolution and refresh rate
+    scale 1 // No scaling (use 2 for HiDPI)
+}

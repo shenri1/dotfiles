@@ -1,0 +1,21 @@
+// =============== Input Configuration ===============
+// I'm actually using this in my laptop so the main
+// purpose is use in a laptop
+
+input {
+    keyboard {
+        xkb {
+            layout "br"
+            variant "abnt"
+        }
+    numlock
+    }
+
+    touchpad {
+        tap
+        natural-scroll
+    }
+
+    focus-follows-mouse
+    workspace-auto-back-and-forth
+}

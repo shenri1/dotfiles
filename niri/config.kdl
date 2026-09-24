@@ -1,0 +1,16 @@
+// =============== Main Configuration ===============
+// Default configs for my personal usage
+// If you want to use this, make sure it is
+// the way you like.
+// Last Update: 09.24.2026
+// All configs are based on official site below:
+// https://niri-wm.github.io/niri/Configuration%3A-Introduction.html
+
+include "./configs/animation.kdl"
+include "./configs/autostart.kdl"
+include "./configs/display.kdl"
+include "./configs/input.kdl"
+include "./configs/keybinds.kdl"
+include "./configs/layout.kdl"
+include "./configs/misc.kdl"
+include "./configs/rules.kdl"

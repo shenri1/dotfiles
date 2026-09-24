@@ -1,0 +1,6 @@
+// =============== Animations Configuration ===============
+// I'm using niri + noctalia v5, if you're use other shell,
+// uncomment add it.
+
+spawn-at-startup "noctalia"
+// spawn-at-startup "waybar"
